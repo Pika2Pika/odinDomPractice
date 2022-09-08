@@ -16,8 +16,14 @@ paraChild.textContent = "ME TOO!";
 
 div.append(headerChild, paraChild);
 container.append(para, header, div);
-//container.appendChild(para);
-//container.appendChild(header);
+const btn = document.querySelector('button');
+//btn.addEventListener('click', alertFunction)
+btn.addEventListener('click', function (e){ 
+    console.log(e.target);
+})
 
-//container.appendChild(div);
 
+
+function alertFunction(){
+    alert('it worked');
+}
